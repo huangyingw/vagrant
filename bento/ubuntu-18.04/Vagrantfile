@@ -1,0 +1,5 @@
+
+zsh:1: command not found: pbpaste-remote
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-18.04"
+end
