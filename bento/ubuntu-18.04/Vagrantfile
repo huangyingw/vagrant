@@ -2,4 +2,8 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-18.04"
   config.vm.network "public_network"
   config.vm.synced_folder "~/loadrc/", "/home/vagrant/loadrc/"
+  config.vm.provision "shell", inline: <<-SHELL
+    cd /home/vagrant/loadrc/
+    sudo ./setup_remote.sh 
+  SHELL
 end
