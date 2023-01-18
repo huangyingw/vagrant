@@ -1,1 +1,5 @@
-git@github.com:huangyingw/vagrant.git
+[remote "origin"]
+    url = git@github.com:huangyingw/vagrant.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[push]
+    remote = origin
