@@ -1,2 +1,2 @@
-*/.vagrant/*
-bento/ubuntu-18.04/.vagrant/
+*.vagrant/
+*.log
